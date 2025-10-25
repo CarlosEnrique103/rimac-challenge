@@ -13,7 +13,7 @@ body {
    🎨 TYPOGRAPHY SYSTEM (BEM REWRITE)
    =================================== */
 
-.typography {
+.text {
   font-family: var(--font-brsonoma), sans-serif;
   color: $color-neutrals-700;
 
@@ -213,6 +213,7 @@ body {
     font-size: 2rem;
     line-height: 2.8rem;
   }
+  
    /* Original: .headline-black-11*/
   &--headline-black-md {
     color: $color-neutrals-700;
@@ -242,18 +243,8 @@ body {
     font-size: 1.2rem;
     line-height: 1.6rem;
   }
-
-
   
-  /* Original: .paragraph-regular-5 */
-  &--paragraph-md {
-    color: $color-neutrals-700;
-    font-family: var(--font-lato), sans-serif;
-    letter-spacing: 0.1px;
-    font-weight: 400;
-    font-size: 1.6rem;
-    font-size: 2.8rem;
-  }
+  
 
   /* Original: .paragraph-regular-5-bold */
   &--paragraph-md-bold {
@@ -261,8 +252,8 @@ body {
     font-family: var(--font-lato), sans-serif;
     letter-spacing: 0.2px;
     font-weight: 700;
-    font-size: 1.2rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
   }
 
 
@@ -271,9 +262,9 @@ body {
     color: $color-neutrals-700;
     font-family: var(--font-lato), sans-serif;
     letter-spacing: 0.1px;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.2rem;
-    font-size: 2rem;
+    line-height: 2rem;
   }
 
   /* Original: .paragraph-regular-6 */
@@ -283,6 +274,16 @@ body {
     letter-spacing: 0.1px;
     font-weight: 700;
     font-size: 1.4rem;
-    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+
+  /* Original: .paragraph-regular-5 */
+  &--paragraph-md-2{
+    color: $color-neutrals-700;
+    font-family: var(--font-lato), sans-serif;
+    letter-spacing: 0.1px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
   }
 }

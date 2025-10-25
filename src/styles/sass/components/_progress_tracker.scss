@@ -1,0 +1,60 @@
+@use '../abstracts/variables'  as *;
+@use '../abstracts/mixins'  as *; 
+
+.progressTracker {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem;
+  background-color: $color-neutrals-200;
+  svg {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+  }
+}
+
+.stepContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease;
+  gap: 1.6rem;
+  
+  &.inactive .stepNumber {
+    border: 1px solid $color-neutrals-600;
+    color:$color-neutrals-600;
+  }
+
+  &.active .stepNumber {
+    background: $color-blue-berry-600;
+    color: $color-grey-0;
+    border: none;
+  }
+
+  .stepNumber {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color-neutrals-600;
+    margin-bottom: 4px;
+  }
+
+  &.inactive .stepLabel {
+    color: $color-neutrals-600;
+  }
+
+  &.active .stepLabel {
+    color: $color-neutrals-700;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

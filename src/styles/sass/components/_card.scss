@@ -1,0 +1,88 @@
+
+@use '../abstracts/variables'  as *;
+@use '../abstracts/mixins'  as *; 
+
+.card {
+  
+  &__service {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    background-color: $color-grey-0;
+    padding: 4rem 2.4rem;
+    box-shadow: $shadow-primary;
+    border-radius: 2.4rem;
+    width: 100%;
+    position: relative;
+
+    &--title {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      
+      @include respond(desktop) {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .8rem;
+        text-align: left;
+      }
+    }
+    
+    @include respond(desktop) {
+      width: 25.6rem;
+    }
+  }
+  
+  &__radio-group {
+    position: absolute;
+    top: 1.6rem;
+    right: 2.4rem;
+    cursor: pointer;
+  }
+
+   
+  &__plan {
+    width: 28.8rem;
+    height: 66.2rem;
+    padding: 6.8rem 3.2rem 5rem 3.2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 2.4rem;
+    background-color: $color-grey-0;
+    box-shadow: $shadow-primary;
+    border-radius: 2.4rem;
+    &-header {
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+
+      &--title {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex: 1;
+
+        h2 {
+          margin-bottom: 2.4rem;
+        }
+
+        span {
+          margin-bottom: .4rem;
+        }
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem
+    }
+
+    button {
+      margin-top: auto;
+    }
+  }
+}
+

@@ -1,0 +1,101 @@
+
+@use '../abstracts/variables'  as *;
+@use '../abstracts/mixins'  as *; 
+
+.btn {
+    font-weight: 700 !important;
+    letter-spacing: 0.4px !important;;
+    font-size: 1.8rem !important;
+    line-height: 2rem !important;
+    
+    & ,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      transition: all .2s;  
+      position: relative; 
+      backface-visibility: hidden;
+      border: none;
+      cursor: pointer;
+    }
+
+    &:hover {
+      transform: translateY(-.3rem);
+      box-shadow: 0 .5rem 1rem rgba($color-grey-100, .2);
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      transform: translateY(-.1rem);
+      box-shadow: 0 .5rem 1rem rgba($color-grey-100, .2);
+    }
+
+    &__primary {
+      padding: 1.8rem 0rem;
+      width: 100%;
+      border-radius: 4rem;
+      background-color: $color-grey-100;
+      color: $color-grey-0;
+     
+
+      @include respond(desktop) {
+        padding: 2rem 0rem;
+        font-size: 2rem;
+        line-height: 2.4rem;
+      }
+    }
+
+    &__secondary {
+      background-color: $color-rimac-500;
+      color: $color-grey-0;
+      border-radius: 3.2rem;
+      padding: 1.4rem 0rem;
+      width: 100%;
+     
+      @include respond(desktop) {
+        padding: 2rem 0rem;
+      }
+    }
+}
+
+.btn__spinner {
+  border: 2px solid #fff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  width: 1.8rem;
+  height: 1.8rem;
+  animation: spin 0.6s linear infinite;
+  display: inline-block;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+
+  @include respond(desktop) {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn__back {
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+  font-family: var(--font-lato), sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: $color-blue-berry-600;
+  cursor: pointer;
+}
+
+

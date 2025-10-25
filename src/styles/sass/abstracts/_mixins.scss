@@ -1,9 +1,23 @@
-@mixin respond($breakpoint) {
-  @if($breakpoint == phone) {
-    @media only screen and (max-width: 24em) { @content; } // 384px / 16 = 24em
-  }
+// @mixin respond($breakpoint) {
+//   @if($breakpoint == phone) {
+//     @media only screen and (max-width: 24em) { @content; } // 384px / 16 = 24em
+//   }
    
+//   @if($breakpoint == desktop) {
+//     @media only screen and (min-width: 85em) { @content; } // 1360px / 16 = 85em
+//   }
+// }
+
+@mixin respond($breakpoint) {
   @if($breakpoint == desktop) {
-    @media only screen and (min-width: 85em) { @content; } // 1360px / 16 = 85em
+    @media only screen and (min-width: 38em) { // 384px / 16 = 24em
+      @content;
+    }
+  }
+
+  @if($breakpoint == phone) {
+    @media only screen and (max-width: 37.5em) { // hasta 384px
+      @content;
+    }
   }
 }
