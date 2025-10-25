@@ -53,6 +53,8 @@
     background-color: $color-grey-0;
     box-shadow: $shadow-primary;
     border-radius: 2.4rem;
+    min-width: 28.8rem;
+    
     &-header {
       display: flex;
       align-content: center;

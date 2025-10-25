@@ -7,6 +7,8 @@
 @use './components/button' as *;
 @use './components/card' as *;
 @use './components/progress_tracker' as *;
+@use './components/form' as *;
+@use './components/user_detail' as *;
 
 
 @use './layout/header' as *;
@@ -14,6 +16,8 @@
 
 
 @use './pages/home' as *;
+@use './pages/business' as *;
+
 
 
 

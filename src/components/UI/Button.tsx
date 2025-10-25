@@ -2,6 +2,8 @@ import ActiveIndicator from "./ActiveIndicator";
 
 type ButtonVariant = "primary" | "secondary";
 
+type ButtonType = "button" | "submit" | "reset";
+
 type Props = {
   onClick: () => void;
   title: string;
@@ -9,6 +11,7 @@ type Props = {
   disabled?: boolean;
   isLoading?: boolean;
   children?: React.ReactNode;
+  type?: ButtonType;
 };
 
 const Button = ({
@@ -17,13 +20,19 @@ const Button = ({
   variant = "primary",
   disabled = false,
   isLoading = false,
+  type = "button",
 }: Props) => {
   const classes = `btn btn__${variant}`;
 
   return (
-    <button className={classes} onClick={onClick} disabled={disabled}>
+    <button
+      className={classes}
+      onClick={onClick}
+      disabled={disabled}
+      type={type}
+    >
       {isLoading && <ActiveIndicator />}
-      {!isLoading && <span>{title}</span>}
+      {!isLoading && <a>{title}</a>}
     </button>
   );
 };

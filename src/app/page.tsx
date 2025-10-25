@@ -1,3 +1,4 @@
+import HomeForm from "@/components/HomeForm";
 import HomeLayout from "@/components/layouts/HomeLayout";
 import Image from "next/image";
 
@@ -17,6 +18,7 @@ const HomePage = () => {
               Tú eliges cuánto pagar. Ingresa tus datos, cotiza y recibe nuestra
               asesoría, 100% online.
             </p>
+            <HomeForm />
           </div>
         </div>
         <Image
@@ -34,6 +36,7 @@ const HomePage = () => {
           Tú eliges cuánto pagar. Ingresa tus datos, cotiza y recibe nuestra
           asesoría, 100% online.
         </p>
+        <HomeForm />
       </div>
     </HomeLayout>
   );

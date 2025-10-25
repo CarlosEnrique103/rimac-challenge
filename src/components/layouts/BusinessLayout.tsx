@@ -2,18 +2,18 @@ import { type ReactNode } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 
-interface HomeLayout {
+type Props = {
   children: ReactNode;
-}
+};
 
-const HomeLayout = ({ children }: HomeLayout) => {
+const BusinessLayout = ({ children }: Props) => {
   return (
-    <div className="home">
+    <div className="business">
       <Header />
-      <section className="home__body">{children}</section>
+      <section className="business__body">{children}</section>
       <Footer />
     </div>
   );
 };
 
-export default HomeLayout;
+export default BusinessLayout;

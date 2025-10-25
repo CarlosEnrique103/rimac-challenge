@@ -1,0 +1,68 @@
+@use '../abstracts/variables'  as *;
+@use '../abstracts/mixins'  as *; 
+
+.business {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+
+    &-text{
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      text-align: center;
+      max-width: 54.4rem;
+    }
+    &-service-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+  
+      @include respond(desktop) {
+        flex-direction: row;
+        align-items: center;
+        gap: 3.2rem;
+      }
+
+    }
+  }
+
+  &__plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4rem;
+  
+    width: 100%;
+    gap: 3.2rem;
+   
+    @include respond(desktop) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 3.2rem;
+      max-width: $max-width;
+    }
+  
+  }
+
+  &__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2.4rem;  
+  }
+}
