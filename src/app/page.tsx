@@ -1,4 +1,4 @@
-// import styles from "./page.module.css";
+import { ArrowLeftIcon } from "@/icons";
 
 export default function Home() {
   return (
@@ -6,6 +6,8 @@ export default function Home() {
       <h1 className="typography--heading-primary-main">
         Creado para ti y tu familia
       </h1>
+
+      <ArrowLeftIcon />
     </div>
   );
 }
