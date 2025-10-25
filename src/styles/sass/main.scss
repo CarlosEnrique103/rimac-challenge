@@ -9,6 +9,12 @@
 @use './components/progress_tracker' as *;
 
 
+@use './layout/header' as *;
+@use './layout/footer' as *;
+
+
+@use './pages/home' as *;
+
 
 
 

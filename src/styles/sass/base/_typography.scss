@@ -55,6 +55,13 @@ body {
     line-height: 1.6rem;
   }
 
+   &--comp-sm-bold {
+    font-weight: 700;
+    letter-spacing: 0px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
   /* Original: .comp-14-regular */
   &--comp-md {
     font-weight: 400;
@@ -69,6 +76,14 @@ body {
     letter-spacing: 0px;
     font-size: 1.6rem;
     line-height: 2.4rem;
+  }
+
+   /* Original: .comp-16-bold */
+  &--comp-lg-bold {
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    font-size: 1.6rem;
+    line-height: 2rem;
   }
 
   /* Original: .comp-20-bold */
