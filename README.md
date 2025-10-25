@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👨🏻‍💻 Rimac Challenge 
 
-## Getting Started
+## 🖥 Technologies & Languages
 
-First, run the development server:
+1. Next.js · React · TypeScript
+2. Sass (Arquitectura 7-1 · BEM)
+3. Next.js App Router
+4. Zustand
+5. Zod
+6. TanStack React Query
+7. Axios
+
+## 🛠 Installing
+
+> **Note:** This project requires **Node.js version 21.x or later**.  
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# development
+$ npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🍏 Running App
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# development
+$ npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## 🍏 Env
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# development .env.local
+$ NEXT_PUBLIC_API_URL=https://rimac-front-end-challenge.netlify.app
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🐨 Stay in touch
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Author - [Juan Carlos Echevarria](https://juancarlosechevarria.netlify.app/)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🪪 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[MIT licensed](LICENSE).
+
+### Happy Coding! 🚀

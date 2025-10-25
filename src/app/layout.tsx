@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Providers from "./providers";
 import "../styles/sass/main.scss";
 
 const brsonomaFont = localFont({
@@ -33,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${brsonomaFont.variable} ${latoFont.variable}`}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
