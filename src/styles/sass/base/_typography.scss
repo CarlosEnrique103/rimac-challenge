@@ -1,0 +1,288 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+body {
+  font-family: var(--font-lato), sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $color-neutrals-700;
+}
+
+/* ===================================
+   🎨 TYPOGRAPHY SYSTEM (BEM REWRITE)
+   =================================== */
+
+.typography {
+  font-family: var(--font-brsonoma), sans-serif;
+  color: $color-neutrals-700;
+
+  /* ===========================
+     🧩 BODY TEXT
+     =========================== */
+
+  /* Original: .body-12-regular */
+  &--body-md {
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    @include respond(desktop) {
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+  }
+
+  /* Original: .body-12-link */
+  &--body-link {
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-decoration: underline;
+  }
+
+  /* ===========================
+     🧩 COMPONENT TEXT
+     =========================== */
+
+  /* Original: .comp-12-regular */
+  &--comp-sm {
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  /* Original: .comp-14-regular */
+  &--comp-md {
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  /* Original: .comp-16-regular */
+  &--comp-lg {
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  /* Original: .comp-20-bold */
+  &--comp-xl {
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    font-size: 1.8rem;
+    line-height: 2rem;
+
+    @include respond(desktop) {
+      font-size: 2rem;
+      line-height: 2.4rem;
+    }
+  }
+
+  /* ===========================
+     🧩 HEADINGS
+     =========================== */
+
+  /* Original: .heading-primary */
+  &--heading-primary {
+    color: $color-grey-100;
+    font-family: var(--font-brsonoma), sans-serif;
+
+    /* Original: .heading-primary--main */
+    &-main {
+      letter-spacing: 0px;
+      font-weight: 700;
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+     
+
+      @include respond(desktop) {
+        font-size: 3.2rem;
+        line-height: 4rem;
+      }
+    }
+
+    /* Original: .heading-primary--sub */
+    &-sub {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      letter-spacing: 0.2px;
+      font-weight: 600;
+    }
+
+    /* Original: .heading-primary--tag */
+    &-tag {
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      letter-spacing: 0.4px;
+      font-weight: 700;
+    }
+  }
+
+  /* Original: .heading-secondary */
+  &--heading-secondary {
+    color: $color-neutrals-700;
+    font-family: var(--font-lato), sans-serif;
+
+    /* Original: .heading-secondary--main */
+    &-main {
+      letter-spacing: -0.2px;
+      font-weight: 700;
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+
+      @include respond(desktop) {
+        font-size: 4rem;
+        letter-spacing: -0.6px;
+      }
+    }
+
+    /* Original: .heading-secondary--sub */
+    &-sub {
+      letter-spacing: 0.1px;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      font-weight: 400;
+    }
+  }
+
+  /* Original: .heading-tertiary */
+  &--heading-tertiary {
+    color: $color-neutrals-700;
+    font-family: var(--font-lato), sans-serif;
+
+    /* Original: .heading-tertiary--main */
+    &-main {
+      letter-spacing: -0.6px;
+      font-weight: 700;
+      font-size: 3.2rem;
+      line-height: 4rem;
+
+      @include respond(desktop) {
+        font-size: 4rem;
+        line-height: 4.8rem;
+      }
+    }
+
+    /* Original: .heading-secondary--sub */
+    &-sub {
+      letter-spacing: 0.1px;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      font-weight: 400;
+    }
+  }
+
+
+  /* ===========================
+     🧩 HEADLINE (EXTRA)
+     =========================== */
+
+  /* Original: .headline-bold-13 */
+
+   &--headline-bold-sm {
+    color: $color-neutrals-700;
+    font-family: var(--font-lato), sans-serif;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  /* Original: .headline-bold-16 */
+  &--headline-bold-md {
+    color: $color-neutrals-700;
+    font-family: var(--font-lato), sans-serif;
+    letter-spacing: -0.2px;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  /* Original: .headline-black-13 */
+  &--headline-black-sm {
+    color: $color-neutrals-700;
+    font-family: var(--font-lato), sans-serif;
+    letter-spacing: -0.2px;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+   /* Original: .headline-black-11*/
+  &--headline-black-md {
+    color: $color-neutrals-700;
+    font-family: var(--font-lato), sans-serif;
+    letter-spacing: -0.2px;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+
+  /* Original: .headline-upper-black-22*/
+  &--headline-upper-black-sm {
+    color: $color-neutrals-600;
+    font-family: var(--font-lato), sans-serif;
+    letter-spacing: 0.8px;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  /* Original: .headline-upper-black-21*/
+  &--headline-upper-black-md {
+    color: $color-neutrals-600;
+    font-family: var(--font-lato), sans-serif;
+    letter-spacing: 0.6px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+
+  
+  /* Original: .paragraph-regular-5 */
+  &--paragraph-md {
+    color: $color-neutrals-700;
+    font-family: var(--font-lato), sans-serif;
+    letter-spacing: 0.1px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-size: 2.8rem;
+  }
+
+  /* Original: .paragraph-regular-5-bold */
+  &--paragraph-md-bold {
+    color: $color-neutrals-700;
+    font-family: var(--font-lato), sans-serif;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-size: 2rem;
+  }
+
+
+  /* Original: .paragraph-regular-7 */
+  &--paragraph-sm {
+    color: $color-neutrals-700;
+    font-family: var(--font-lato), sans-serif;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-size: 2rem;
+  }
+
+  /* Original: .paragraph-regular-6 */
+  &--paragraph-md {
+    color: $color-neutrals-700;
+    font-family: var(--font-lato), sans-serif;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    font-size: 2.4rem;
+  }
+}
